@@ -1303,7 +1303,7 @@ button:disabled,
 	display: -ms-flex;
 	display: flex;
 	background-color: #242526e1;
-	backdrop-filter: invert(100%) grayscale(100%);
+	backdrop-filter: invert(100%) grayscale(100%) blur(4px);
 	/* background-color: #242526; */
 	box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 	cursor: default;
