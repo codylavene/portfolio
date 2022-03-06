@@ -18,9 +18,15 @@
 	<body>
 		<div id="wrapper">
 			<header id="header">
-				<a href="#banner" class="logo">Cody Lavene</a>
+				<a href="#banner" class="logo"><strong>Cody</strong> Lavene</a>
 				<nav>
-					<a href="#menu"><i class="fa-solid fa-bars"></i></a>
+					<div>
+						<span><a href="#about">About</a></span>
+						<span><a href="#skills">Skills</a></span>
+						<span><a href="#projects">Projects</a></span>
+						<span><a href="#contact">Contact</a></span>
+					</div>
+					<!-- <a href="#menu"><i class="fa-solid fa-bars"></i></a> -->
 				</nav>
 			</header>
 			<nav id="menu">
@@ -42,19 +48,45 @@
 				<section id="banner" class="major">
 					<div class="inner">
 						<header class="major">
-							<h1>Hi, my name is Cody</h1>
+							<h1>
+								Hi! I'm Cody, <br />
+								a Software Engineer
+							</h1>
 						</header>
 						<div class="content">
-							<h2>Software Engineer</h2>
+							<div class="roller">
+								<div>I am</div>
+								<div class="items">
+									<span class="blue"
+										>a Software Engineer</span
+									>
+									<span class="yellow">a learner</span>
+									<span class="pink">creative</span>
+									<span class="purple">driven</span>
+									<span class="red">passionate</span>
+									<span class="blue">a team player</span>
+									<span class="yellow">innovative</span>
+									<span class="pink">a problem solver</span>
+									<span class="purple">a leader</span>
+									<span class="red">a Software Engineer</span>
+								</div>
+							</div>
+							<!-- <h2>Software Engineer</h2> -->
 							<ul class="actions">
 								<li>
-									<a href="#one" class="button next scrolly"
-										>Get Started
+									<a href="#about" class="button next scrolly"
+										>Learn more
 										<i class="fa-solid fa-arrow-right"></i
 									></a>
 								</li>
 							</ul>
 						</div>
+						<!-- <div>
+							<span><a href="#about">01.About</a></span>
+							<span><a href="#skills">02. Skills</a></span>
+							<span><a href="#projects">03. Projects</a></span>
+							<span><a href="#contact">04. Contact</a></span>
+						</div> -->
 					</div>
 				</section>
 				<!-- about  -->
@@ -64,21 +96,57 @@
 							<h2>About Me</h2>
 						</header>
 						<p>
-							Nullam et orci eu lorem consequat tincidunt vivamus
-							et sagittis libero. Mauris aliquet magna magna sed
-							nunc rhoncus pharetra. Pellentesque condimentum sem.
-							In efficitur ligula tate urna. Maecenas laoreet
-							massa vel lacinia pellentesque lorem ipsum dolor.
-							Nullam et orci eu lorem consequat tincidunt. Vivamus
-							et sagittis libero. Mauris aliquet magna magna sed
-							nunc rhoncus amet pharetra et feugiat tempus.
+							When I was young, I was driven by the unknown. I
+							would take apart anything I could get my hands on to
+							see how it worked at its core. I would take notes on
+							what I thought each component was doing and then put
+							it back together. This innate curiosity has not
+							evaded me as childhood has; however, it has evolved
+							into something new: <span class="pink">code</span>.
 						</p>
+						<p>
+							I previously worked at a small startup soap company,
+							and it was an incredible experience. I had the
+							opportunity to solve many problems, design
+							<span class="orange">creative solutions</span>
+							to production <span class="red">scalability</span>,
+							and leverage my
+							<span class="blue">communication skills</span> to
+							lead a team through the growing pains of a young
+							company. As time passed, the problems became more
+							scarce, and I became unfulfilled and unsatisfied in
+							my path. Enter: the ultimate career path for a
+							problem-solver,
+							<span class="pink">software development</span>.
+						</p>
+						<p>
+							I began my coding journey a year ago when I decided
+							it was time to make a shift into a career where my
+							need to be constantly learning is satisfied. I
+							decided to leave my leadership role in the pursuit
+							of learning to code full time. Over the last year, I
+							have refined my skills in
+							<span class="yellow">JavaScript</span>,
+							<span class="blue">React / Redux</span>,
+							<span class="pink">Python</span>, and
+							<span class="purple">PostgreSQL</span>, along with
+							many other <span class="red">frameworks</span> and
+							<span class="red">tools</span>. Check out my
+							<a href="#skills" class="yellow">skills</a> below
+							for a comprehensive list.
+						</p>
+						<p>
+							Check out my
+							<a href="#projects" class="yellow">projects</a>
+							below to see all this in action!
+						</p>
+
 						<h3>Want to learn more?</h3>
 						<ul class="actions">
 							<li>
 								<a
 									href="https://www.linkedin.com/in/codylavene/"
-									class="button next"
+									class="button next fit"
 									target="_blank"
 									>LinkedIn
 									<i class="fa-solid fa-arrow-right"></i
@@ -87,7 +155,7 @@
 							<li>
 								<a
 									href="landing.html"
-									class="button next"
+									class="button next fit"
 									target="_blank"
 									>Resume
 									<i class="fa-solid fa-arrow-right"></i
@@ -96,7 +164,7 @@
 							<li>
 								<a
 									href="https://github.com/codylavene"
-									class="button next"
+									class="button next fit"
 									target="_blank"
 									>GitHub
 									<i class="fa-solid fa-arrow-right"></i
@@ -109,256 +177,282 @@
 				<section id="skills" class="tiles">
 					<div class="inner">
 						<header class="major">
-							<h2>Skills</h2>
+							<h2>Skills & Tools</h2>
 						</header>
 
 						<div>
-							<div><i class="devicon-javascript-plain"></i></div>
 							<div>
-								<i class="devicon-python-plain-wordmark"></i>
+								<i class="devicon-javascript-plain yellow"></i>
 							</div>
-							<div>
-								<i class="devicon-react-original-wordmark"></i>
-							</div>
-							<div><i class="devicon-redux-original"></i></div>
-							<div>
-								<i class="devicon-html5-plain-wordmark"></i>
-							</div>
-							<div>
-								<i class="devicon-css3-plain-wordmark"></i>
-							</div>
-							<div>
-								<i class="devicon-nodejs-plain-wordmark"></i>
-							</div>
-							<div><i class="fa-brands fa-aws"></i></div>
 							<div>
 								<i
-									class="devicon-postgresql-plain-wordmark"
+									class="devicon-python-plain-wordmark pink"
 								></i>
 							</div>
 							<div>
 								<i
-									class="devicon-express-original-wordmark"
+									class="devicon-react-original-wordmark blue"
 								></i>
 							</div>
-							<div><i class="devicon-flask-original"></i></div>
 							<div>
-								<i class="devicon-docker-plain-wordmark"></i>
+								<i class="devicon-redux-original purple"></i>
+							</div>
+							<div>
+								<i class="devicon-html5-plain-wordmark red"></i>
+							</div>
+							<div>
+								<i class="devicon-css3-plain-wordmark blue"></i>
+							</div>
+							<div>
+								<i
+									class="devicon-nodejs-plain-wordmark pink"
+								></i>
+							</div>
+							<div><i class="fa-brands fa-aws orange"></i></div>
+							<div>
+								<i
+									class="devicon-postgresql-plain-wordmark purple"
+								></i>
+							</div>
+							<div>
+								<i
+									class="devicon-express-original-wordmark red"
+								></i>
+							</div>
+							<div>
+								<i class="devicon-flask-original yellow"></i>
+							</div>
+							<div>
+								<i
+									class="devicon-docker-plain-wordmark blue"
+								></i>
 							</div>
 
-							<div><i class="devicon-git-plain"></i></div>
+							<div><i class="devicon-git-plain orange"></i></div>
 							<div>
-								<i class="devicon-heroku-plain-wordmark"></i>
+								<i
+									class="devicon-heroku-plain-wordmark purple"
+								></i>
 							</div>
 
 							<div>
-								<i class="devicon-sequelize-plain-wordmark"></i>
+								<i
+									class="devicon-sequelize-plain-wordmark red"
+								></i>
 							</div>
 							<div>
 								<i
-									class="devicon-sqlalchemy-original-wordmark"
+									class="devicon-sqlalchemy-original-wordmark yellow"
 								></i>
 							</div>
-							<div><i class="devicon-vscode-plain"></i></div>
+							<!-- <div><i class="devicon-vscode-plain blue"></i></div> -->
 						</div>
 					</div>
 				</section>
 				<!-- projects  -->
 				<section id="projects" class="spotlights">
-					<section>
-						<a
-							href="https://base-book.herokuapp.com/"
-							class="image"
-							target="_blank"
-						>
-							<img
-								src="assets/images/basebook.png"
-								alt=""
-								data-position="center center"
-							/>
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>Basebook</h3>
-								</header>
-								<p>
-									Nullam et orci eu lorem consequat tincidunt
-									vivamus et sagittis magna sed nunc rhoncus
-									condimentum sem. In efficitur ligula tate
-									urna. Maecenas massa sed magna lacinia magna
-									pellentesque lorem ipsum dolor. Nullam et
-									orci eu lorem consequat tincidunt. Vivamus
-									et sagittis tempus.
-								</p>
-								<ul class="actions">
-									<li>
-										<a
-											href="https://base-book.herokuapp.com/"
-											class="button"
-											target="_blank"
-											>Live Site</a
+					<div class="inner">
+						<header class="major">
+							<h2>Projects</h2>
+						</header>
+
+						<section>
+							<a
+								href="https://base-book.herokuapp.com/"
+								class="image"
+								target="_blank"
+							>
+								<img
+									src="assets/images/basebook.png"
+									alt=""
+									data-position="center center"
+								/>
+							</a>
+							<div class="content">
+								<div class="inner">
+									<header class="major">
+										<h3>Basebook</h3>
+									</header>
+									<p>
+										Basebook is a clone of Facebook.
+										<span class="pink"
+											>REAL DESCRIPTION COMING SOON!</span
 										>
-									</li>
-									<li>
-										<a
-											href="https://github.com/codylavene/basebook"
-											class="button"
-											target="_blank"
-											>View the Code</a
-										>
-									</li>
-								</ul>
+									</p>
+									<ul class="actions projects">
+										<li>
+											<a
+												href="https://base-book.herokuapp.com/"
+												class="button fit"
+												target="_blank"
+												>View Live Site</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/codylavene/basebook"
+												class="button fit"
+												target="_blank"
+												>View the Code</a
+											>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</section>
-					<section>
-						<a
-							href="https://split-a-bill.herokuapp.com/"
-							class="image"
-							target="_blank"
-						>
-							<img
-								src="assets/images/splitabill.png"
-								alt=""
-								data-position="top center"
-							/>
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>Splitabill</h3>
-								</header>
-								<p>
-									Nullam et orci eu lorem consequat tincidunt
-									vivamus et sagittis magna sed nunc rhoncus
-									condimentum sem. In efficitur ligula tate
-									urna. Maecenas massa sed magna lacinia magna
-									pellentesque lorem ipsum dolor. Nullam et
-									orci eu lorem consequat tincidunt. Vivamus
-									et sagittis tempus.
-								</p>
-								<ul class="actions">
-									<li>
-										<a
-											href="https://split-a-bill.herokuapp.com/"
-											class="button"
-											target="_blank"
-											>Live Site</a
+						</section>
+						<section>
+							<a
+								href="https://split-a-bill.herokuapp.com/"
+								class="image"
+								target="_blank"
+							>
+								<img
+									src="assets/images/splitabill.png"
+									alt=""
+									data-position="top center"
+								/>
+							</a>
+							<div class="content">
+								<div class="inner">
+									<header class="major">
+										<h3>Splitabill</h3>
+									</header>
+									<p>
+										Splitabill is an application based
+										loosely off of SplitWise, with an
+										aesthetic closer to Venmo.
+										<span class="pink"
+											>REAL DESCRIPTION COMING SOON!</span
 										>
-									</li>
-									<li>
-										<a
-											href="https://github.com/choi-jihoon/SplittaBill"
-											class="button"
-											target="_blank"
-											>View the Code</a
-										>
-									</li>
-								</ul>
+									</p>
+									<ul class="actions projects">
+										<li>
+											<a
+												href="https://split-a-bill.herokuapp.com/"
+												class="button fit"
+												target="_blank"
+												>View Live Site</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/choi-jihoon/SplittaBill"
+												class="button fit"
+												target="_blank"
+												>View the Code</a
+											>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</section>
-					<section>
-						<a
-							href="https://space-cation.herokuapp.com/"
-							class="image"
-							target="_blank"
-						>
-							<img
-								src="assets/images/space-cation.png"
-								alt=""
-								data-position="25% 25%"
-							/>
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>SpaceCation</h3>
-								</header>
-								<p>
-									Nullam et orci eu lorem consequat tincidunt
-									vivamus et sagittis magna sed nunc rhoncus
-									condimentum sem. In efficitur ligula tate
-									urna. Maecenas massa sed magna lacinia magna
-									pellentesque lorem ipsum dolor. Nullam et
-									orci eu lorem consequat tincidunt. Vivamus
-									et sagittis tempus.
-								</p>
-								<ul class="actions">
-									<li>
-										<a
-											href="https://space-cation.herokuapp.com/"
-											class="button"
-											target="_blank"
-											>Live Site</a
+						</section>
+						<section>
+							<a
+								href="https://space-cation.herokuapp.com/"
+								class="image"
+								target="_blank"
+							>
+								<img
+									src="assets/images/space-cation.png"
+									alt=""
+									data-position="25% 25%"
+								/>
+							</a>
+							<div class="content">
+								<div class="inner">
+									<header class="major">
+										<h3>SpaceCation</h3>
+									</header>
+									<p>
+										SpaceCation is a clone of airBnB, with a
+										fun, spacey twist.
+										<span class="pink"
+											>REAL DESCRIPTION COMING SOON!</span
 										>
-									</li>
-									<li>
-										<a
-											href="https://github.com/codylavene/space-cation"
-											class="button"
-											target="_blank"
-											>View the Code</a
-										>
-									</li>
-								</ul>
+									</p>
+									<ul class="actions projects">
+										<li>
+											<a
+												href="https://space-cation.herokuapp.com/"
+												class="button fit"
+												target="_blank"
+												>View Live Site</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/codylavene/space-cation"
+												class="button fit"
+												target="_blank"
+												>View the Code</a
+											>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</section>
-					<section>
-						<a
-							href="https://udderly-forgetful.herokuapp.com/"
-							class="image"
-							target="_blank"
-						>
-							<img
-								src="assets/images/udderly.png"
-								alt=""
-								data-position="25% 25%"
-							/>
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>Udderly Forgetful</h3>
-								</header>
-								<p>
-									Nullam et orci eu lorem consequat tincidunt
-									vivamus et sagittis magna sed nunc rhoncus
-									condimentum sem. In efficitur ligula tate
-									urna. Maecenas massa sed magna lacinia magna
-									pellentesque lorem ipsum dolor. Nullam et
-									orci eu lorem consequat tincidunt. Vivamus
-									et sagittis tempus.
-								</p>
-								<ul class="actions">
-									<li>
-										<a
-											href="https://udderly-forgetful.herokuapp.com/"
-											class="button"
-											target="_blank"
-											>Live Site</a
+						</section>
+						<section>
+							<a
+								href="https://udderly-forgetful.herokuapp.com/"
+								class="image"
+								target="_blank"
+							>
+								<img
+									src="assets/images/udderly.png"
+									alt=""
+									data-position="25% 25%"
+								/>
+							</a>
+							<div class="content">
+								<div class="inner">
+									<header class="major">
+										<h3>Udderly Forgetful</h3>
+									</header>
+									<p>
+										Udderly Forgetful is a clone of Remember
+										the Milk. This single page web app was
+										built with only vanilla
+										<span class="yellow">JavaScript</span>,
+										and users can create to-do lists, and
+										add tasks to them.
+										<span class="pink"
+											>REAL DESCRIPTION COMING SOON!</span
 										>
-									</li>
-									<li>
-										<a
-											href="https://github.com/codylavene/udderly_forgetful"
-											class="button"
-											target="_blank"
-											>View the Code</a
-										>
-									</li>
-								</ul>
+									</p>
+									<ul class="actions projects">
+										<li>
+											<a
+												href="https://udderly-forgetful.herokuapp.com/"
+												class="button fit"
+												target="_blank"
+												>View Live Site</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/codylavene/udderly_forgetful"
+												class="button fit"
+												target="_blank"
+												>View the Code</a
+											>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</section>
+						</section>
+					</div>
 				</section>
 
 				<!-- contact  -->
 				<section id="contact">
 					<div class="inner">
 						<section>
+							<header
+								class="major"
+								style="margin-bottom: 100px; margin-top: -30px"
+							>
+								<h2>Contact</h2>
+							</header>
 							<form method="post" action="#">
 								<div class="fields">
 									<div class="field half">
@@ -428,7 +522,7 @@
 									<span
 										>Currently in <br />
 										Central Nebraska.<br />
-										I'll move for you!</span
+										Where are you located?</span
 									>
 								</div>
 							</section>
