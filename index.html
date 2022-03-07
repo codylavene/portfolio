@@ -4,6 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-LR1ZV4M776"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-LR1ZV4M776");
+		</script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link
 			rel="stylesheet"
@@ -21,17 +35,35 @@
 				<a href="#banner" class="logo"><strong>Cody</strong> Lavene</a>
 				<nav>
 					<div>
-						<span><a href="#about">About</a></span>
-						<span><a href="#skills">Skills</a></span>
-						<span><a href="#projects">Projects</a></span>
-						<span><a href="#contact">Contact</a></span>
+						<span class="yellow"><a href="#about">About</a></span>
+						<span class="yellow"><a href="#skills">Skills</a></span>
+						<span class="yellow"
+							><a href="#projects">Projects</a></span
+						>
+						<span class="yellow"
+							><a href="#contact">Contact</a></span
+						>
 					</div>
+					<!-- <div class="menu-wrapper">
+						<label for="menu-toggle"
+							>Menu <i class="fa-solid fa-bars"></i
+						></label>
+						<input type="checkbox" id="menu-toggle" />
+						<div class="menu-content">
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div> -->
 					<!-- <a href="#menu"><i class="fa-solid fa-bars"></i></a> -->
 				</nav>
 			</header>
-			<nav id="menu">
+			<!-- <nav id="menu">
 				<ul class="links">
-					<li><a href="#banner">Home</a></li>
+					<li><a href="#banner">Top</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#projects">Projects</a></li>
@@ -42,7 +74,7 @@
 						<a href="#" class="button">Get Started</a>
 					</li>
 				</ul>
-			</nav>
+			</nav> -->
 			<div id="main">
 				<!-- banner -->
 				<section id="banner" class="major">
@@ -154,7 +186,7 @@
 							</li>
 							<li>
 								<a
-									href="landing.html"
+									href="assets/pdf/Lavene_Cody_Resume.pdf"
 									class="button next fit"
 									target="_blank"
 									>Resume
@@ -174,7 +206,7 @@
 					</div>
 				</section>
 				<!-- skills  -->
-				<section id="skills" class="tiles">
+				<section id="skills" class="skill-cards">
 					<div class="inner">
 						<header class="major">
 							<h2>Skills & Tools</h2>
@@ -250,7 +282,7 @@
 					</div>
 				</section>
 				<!-- projects  -->
-				<section id="projects" class="spotlights">
+				<section id="projects" class="project-cards">
 					<div class="inner">
 						<header class="major">
 							<h2>Projects</h2>
@@ -265,6 +297,7 @@
 								<img
 									src="assets/images/basebook.png"
 									alt=""
+									loading="lazy"
 									data-position="center center"
 								/>
 							</a>
@@ -309,6 +342,7 @@
 								<img
 									src="assets/images/splitabill.png"
 									alt=""
+									loading="lazy"
 									data-position="top center"
 								/>
 							</a>
@@ -355,6 +389,7 @@
 								<img
 									src="assets/images/space-cation.png"
 									alt=""
+									loading="lazy"
 									data-position="25% 25%"
 								/>
 							</a>
@@ -400,6 +435,7 @@
 								<img
 									src="assets/images/udderly.png"
 									alt=""
+									loading="lazy"
 									data-position="25% 25%"
 								/>
 							</a>
@@ -453,7 +489,10 @@
 							>
 								<h2>Contact</h2>
 							</header>
-							<form method="post" action="#">
+							<form
+								method="post"
+								action="https://formspree.io/f/xrgjkook"
+							>
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
@@ -480,6 +519,16 @@
 										></textarea>
 									</div>
 								</div>
+								<!-- <input
+									type="hidden"
+									name="_subject"
+									value="New submission from contact form"
+								/>
+								<input
+									type="hidden"
+									name="_next"
+									value="https://codylavene.dev"
+								/> -->
 								<ul class="actions">
 									<li>
 										<input
@@ -557,7 +606,7 @@
 								>
 							</li>
 						</ul>
-						<div class="copyright">&copy; Cody Lavene</div>
+						<div class="copyright">Cody Lavene &copy; 2022</div>
 					</div>
 				</footer>
 			</div>
