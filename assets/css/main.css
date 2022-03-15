@@ -151,6 +151,7 @@ section {
 
 body {
 	line-height: 1;
+	/* scrollbar-gutter: 0; */
 }
 
 ol,
@@ -219,9 +220,12 @@ body {
 		min-width: 320px;
 	}
 }
-
+::-webkit-scrollbar {
+	display: none;
+}
 html {
 	box-sizing: border-box;
+	scrollbar-width: none;
 }
 
 *,
@@ -1207,9 +1211,10 @@ button:disabled,
 
 /* Spotlights */
 
-.project-cards {
+#projects {
 	border-top: solid 1px rgba(212, 212, 255, 0.1);
 	width: 100%;
+	scroll-snap-align: none !important;
 	/* border-top: 0 !important; */
 }
 
@@ -1926,6 +1931,8 @@ body.is-preload #banner > .inner {
 
 #main {
 	background-color: var(--main-bg);
+	max-height: 100vh;
+	overflow-y: auto;
 	scroll-snap-type: y proximity;
 }
 #main > section {
@@ -1934,7 +1941,7 @@ body.is-preload #banner > .inner {
 	height: fit-content;
 	min-height: 100vh;
 	/* max-height: fit-content; */
-	scroll-snap-align: top;
+	scroll-snap-align: center;
 }
 
 #main > * {
@@ -1969,6 +1976,7 @@ body.is-preload #banner > .inner {
 #contact {
 	border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 	overflow-x: hidden;
+	scroll-snap-align: none !important;
 }
 
 #contact > .inner {
