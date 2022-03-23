@@ -426,8 +426,16 @@ header.major {
 	width: -ms-max-content;
 	width: max-content;
 	margin-bottom: 2em;
+	display: flex;
+	justify-content: space-between;
 }
-
+header.major > img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow: 0 0 25px 2px var(--blue);
+	margin-right: 100px;
+}
 header.major > :first-child {
 	margin-bottom: 0;
 	width: calc(100% + 0.5em);
@@ -1634,6 +1642,11 @@ body.is-preload #header.alt {
 /* Banner */
 
 #banner {
+	/* background-image: url("../images/headshot.png");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain; */
+
 	/* -moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center; */
@@ -1916,6 +1929,7 @@ body.is-preload #banner > .inner {
 @media screen and (max-width: 480px) {
 	#banner {
 		padding: 6em 0 2em 0;
+		background-image: url("../images/headshot.png");
 	}
 
 	#banner > .inner .content p br {
@@ -1926,7 +1940,18 @@ body.is-preload #banner > .inner {
 		padding: 8em 0 4em 0;
 	}
 }
-
+@media screen and (max-width: 500px) {
+	#banner {
+		padding: 6em 0 2em 0;
+		background-image: url("../images/headshot.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	header.major > img {
+		display: none;
+	}
+}
 /* Main */
 
 #main {
